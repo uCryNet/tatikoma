@@ -165,11 +165,6 @@ export const App: React.FC = () => {
         setIsOperand(true)
     }
 
-    const onMemoryRecallButtonClick = ():void => {
-        setDisplay(memory.toString())
-        setIsOperand(true)
-    }
-
     const onMemoryInsertButtonClick = ():void => {
         const history: Rez[] = JSON.parse(localStorage.getItem("rez") as string)
         if (!history) return
@@ -215,7 +210,6 @@ export const App: React.FC = () => {
                 onAllClearButtonClick={onAllClearButtonClick}
                 onClearButtonClick={onClearButtonClick}
                 onClearEntryButtonClick={onClearEntryButtonClick}
-                onMemoryRecallButtonClick={onMemoryRecallButtonClick}
                 onMemoryInsertButtonClick={onMemoryInsertButtonClick}
                 onMemorySaveResult={onMemorySaveResult}
                 onMemoryClear={onMemoryClear}

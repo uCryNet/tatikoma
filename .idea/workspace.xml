@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25175437-ea0f-4115-82d8-32c73413ffb9" name="Default Changelist" comment="" />
+    <list default="true" id="25175437-ea0f-4115-82d8-32c73413ffb9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/NumPad/NumPad.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NumPad/NumPad.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,12 +14,16 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JsBowerSettings">
     <node-interpreter value="project" />
     <bower-package value="" />
     <bower.json value="" />
   </component>
   <component name="ProjectId" id="1pIogLBGSZSRMTL8VTTnZFABfBw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -55,7 +63,7 @@
       <workItem from="1615376173668" duration="4981000" />
       <workItem from="1615384897248" duration="5714000" />
       <workItem from="1615397155800" duration="7003000" />
-      <workItem from="1615465805320" duration="14388000" />
+      <workItem from="1615465805320" duration="17465000" />
     </task>
     <servers />
   </component>

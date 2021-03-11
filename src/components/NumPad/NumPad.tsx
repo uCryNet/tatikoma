@@ -12,7 +12,6 @@ interface NumPadProps {
     onEqualButtonClick: () => void
     onAllClearButtonClick: () => void
     onClearEntryButtonClick: () => void
-    onMemoryRecallButtonClick: () => void
     onMemoryInsertButtonClick: () => void
     onClearButtonClick: () => void
     onMemorySaveResult: () => void
@@ -27,7 +26,6 @@ export const NumPad: React.FC<NumPadProps> = ({
                                                onEqualButtonClick,
                                                onAllClearButtonClick,
                                                onClearEntryButtonClick,
-                                               onMemoryRecallButtonClick,
                                                onMemoryInsertButtonClick,
                                                onClearButtonClick,
                                                onMemorySaveResult,
@@ -42,12 +40,13 @@ export const NumPad: React.FC<NumPadProps> = ({
 
     const onHandleKey = ({keyCode, shiftKey}: KeyboardEvent):void => {
         if (keyCode >= 48 && keyCode <= 57 && !shiftKey) {
+            // Цифры верхний ряд
             onDigitButtonClick((keyCode - 48) as Digit)
         } else if (keyCode === 53 && shiftKey) {
             onOperatorButtonClick('%')
         } else if (keyCode === 107 || (keyCode === 187 && shiftKey)) {
             onOperatorButtonClick('+')
-        } else if (keyCode === 13 || (keyCode === 187 && !shiftKey)) {
+        } else if (keyCode === 187 && !shiftKey) {
             onEqualButtonClick()
         } else if (keyCode === 106 || (keyCode === 56 && shiftKey)) {
             onOperatorButtonClick('×')
@@ -55,16 +54,35 @@ export const NumPad: React.FC<NumPadProps> = ({
             onOperatorButtonClick('-')
         } else if (keyCode === 111 || keyCode === 191) {
             onOperatorButtonClick('÷')
-        } else if ((keyCode >= 96 && keyCode <= 105)) {
-            onDigitButtonClick((keyCode - 96) as Digit)
+        } else if (keyCode === 111 || keyCode === 191) {
+            onOperatorButtonClick('÷')
+        }  else if (keyCode === 68) {
+            // D - точка
+            onDotButtonClick()
         } else if (keyCode === 46) {
+            // Delete - удалить ввод
             onClearEntryButtonClick()
         } else if (keyCode === 27) {
+            // Esc - очистить ввод и историю
             onAllClearButtonClick()
         } else if (keyCode === 78) {
+            // N - добавить/убрать минус впереди
             onMinusSignButtonClick()
-        } else if (keyCode === 82) {
-            onMemoryRecallButtonClick()
+        } else if (keyCode === 80) {
+            // P - вставить сохр. знач.
+            onMemoryInsertButtonClick()
+        } else if (keyCode === 67) {
+            // С - удалить ввод
+            onClearButtonClick()
+        } else if (keyCode === 65) {
+            // A - удалить ввод и историю
+            onAllClearButtonClick()
+        } else if (keyCode === 83) {
+            // S - сохр. историю
+            onMemorySaveResult()
+        } else if (keyCode === 75) {
+            // K - удалить историю
+            onMemoryClear()
         }
     }
 
