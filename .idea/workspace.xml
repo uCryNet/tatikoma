@@ -4,7 +4,6 @@
     <list default="true" id="25175437-ea0f-4115-82d8-32c73413ffb9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/NumPad/NumPad.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NumPad/NumPad.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +14,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsBowerSettings">
@@ -23,12 +27,15 @@
     <bower.json value="" />
   </component>
   <component name="ProjectId" id="1pIogLBGSZSRMTL8VTTnZFABfBw" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -63,12 +70,56 @@
       <workItem from="1615376173668" duration="4981000" />
       <workItem from="1615384897248" duration="5714000" />
       <workItem from="1615397155800" duration="7003000" />
-      <workItem from="1615465805320" duration="17465000" />
+      <workItem from="1615465805320" duration="19372000" />
+      <workItem from="1615486457794" duration="11000" />
+      <workItem from="1615486605326" duration="860000" />
+      <workItem from="1615494821109" duration="2214000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: add functional button">
+      <created>1615484618443</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615484618443</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: for gh-page">
+      <created>1615486818995</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615486818995</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: for gh-page1">
+      <created>1615487277701</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615487277701</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat: add functional button" />
+    <MESSAGE value="feat: for gh-page" />
+    <MESSAGE value="feat: for gh-page1" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: for gh-page1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

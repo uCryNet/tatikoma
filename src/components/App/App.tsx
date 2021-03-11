@@ -11,7 +11,6 @@ interface Rez {
 }
 
 export const App: React.FC = () => {
-    const [memory, setMemory] = useState<number>(0)
     const [result, setResult] = useState<number>(0)
     const [display, setDisplay] = useState<string>('0')
     const [isOperand, setIsOperand] = useState<boolean>(true)
@@ -31,14 +30,15 @@ export const App: React.FC = () => {
                 current: true
             }
 
-            oldArr.push(newRez)
+            newRez.amount !== Infinity && oldArr.push(newRez)
             localStorage.setItem("rez", JSON.stringify(oldArr));
         } else {
             const tempArr: Rez[] = [{
                 amount: newResult,
                 current: true
             }]
-            localStorage.setItem("rez", JSON.stringify(tempArr));
+
+            tempArr[0].amount !== Infinity && localStorage.setItem("rez", JSON.stringify(tempArr))
         }
     }
 
@@ -67,7 +67,13 @@ export const App: React.FC = () => {
         }
 
         setResult(newResult)
-        setDisplay(newResult.toString().slice(0, 7))
+
+        if (newResult.toString().length > 7) {
+            setDisplay( "Infinity" )
+            setTimeout(_ => onClearButtonClick(), 1000)
+        } else {
+            setDisplay(newResult.toString().slice(0, 7))
+        }
 
         return true
     }
@@ -139,7 +145,6 @@ export const App: React.FC = () => {
     }
 
     const onAllClearButtonClick = ():void => {
-        setMemory(0)
         setResult(0)
         setIsOperator(undefined)
         setDisplay('0')
@@ -153,7 +158,6 @@ export const App: React.FC = () => {
     }
 
     const onClearButtonClick = ():void => {
-        setMemory(0)
         setResult(0)
         setIsOperator(undefined)
         setDisplay('0')
