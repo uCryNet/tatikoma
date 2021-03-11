@@ -67,7 +67,7 @@ export const App: React.FC = () => {
         }
 
         setResult(newResult)
-        setDisplay(newResult.toString().toString().slice(0, 7))
+        setDisplay(newResult.toString().slice(0, 7))
 
         return true
     }
