@@ -1,0 +1,33 @@
+.display {
+  color: #000;
+  padding: 15px 31px 34px 31px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+
+  &__screen {
+    font-size: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+
+  &__expression {
+    margin-left: auto;
+  }
+
+  &__indicator {
+    font-size: 15px;
+    line-height: 1;
+    opacity: 0.4;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.25em;
+    min-height: 1em;
+  }
+}
+
+.dark .display {
+  color: #fff;
+}
